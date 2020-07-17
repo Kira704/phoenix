@@ -1,0 +1,73 @@
+/* Start navbar */
+.navbar{
+
+    /* overflow: hidden; */
+    text-transform: uppercase;
+    font-size: 20px;
+    height: 0;/*to made header background up to navbar and that work with clearfix only not with overflow: hidden*/
+    color: #919aa4;
+    position: relative;
+    z-index: 2;
+    .brand {
+
+        /* text-align: center; */
+        float: left;
+        width: 40%;
+        img{
+            margin-top: 20px;
+        }
+    }
+    span{
+        color: #f7600f;
+    }
+    .links{
+
+        float: left;
+        width: 60%;
+        text-align: right;
+        li{
+            display: inline-block;;
+            padding:15px 0 0 0;/*Top , Right , Bottom , Left*/
+            margin: 0 10px;
+            text-transform: capitalize;
+            border-Top: 2px solid transparent; /* transparent: hidden the border*/
+            font-weight: bold;
+            a{
+                text-decoration: none;
+                color: #FFF;
+                 margin-top: 60px;
+            }
+        &:active{
+            a{
+                color: #f7600f;
+                border-top: 2px solid #f7600f;
+                cursor: pointer;
+                &:hover{
+                    color: #f7600f;
+                }
+            }
+        }
+        &:hover{
+            border-top: 2px solid #f7600f;
+            cursor: pointer;
+        }
+        }
+    }
+}
+
+
+/* End navbar */
+
+/*Start media*/
+@media(min-width:768px) and (max-width: 991px){
+    .navbar{
+        .brand{
+            .links{
+                li{
+                    
+                }
+            }
+        }
+    }
+}
+/*End media*/

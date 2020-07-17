@@ -1,0 +1,278 @@
+.container {
+  margin: auto;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+.line_under {
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+}
+
+h2 {
+  font-weight: normal;
+  padding-top: 20px;
+}
+
+p {
+  color: #777;
+  line-height: 1.5;
+}
+
+ul li:hover {
+  cursor: pointer;
+}
+
+.separator {
+  color: #999;
+  margin: 36px 0;
+}
+
+.navbar-icon {
+  height: 50px;
+  background-color: #2b3034;
+}
+
+.navbar-icon .navbar-left {
+  width: 50%;
+}
+
+.navbar-icon .navbar-left span {
+  color: #919aa4;
+  cursor: pointer;
+}
+
+.navbar-icon .navbar-left i {
+  color: #bcbcbc;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.navbar-icon .navbar-left i:hover {
+  color: #f7600f;
+}
+
+.navbar-icon .navbar-right {
+  width: 50%;
+}
+
+.navbar-icon .navbar-right i {
+  color: #bcbcbc;
+  line-height: 50px;
+  float: right;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.navbar-icon .navbar-right i:hover {
+  color: #f7600f;
+}
+
+/* Start navbar */
+.navbar {
+  /* overflow: hidden; */
+  text-transform: uppercase;
+  font-size: 20px;
+  height: 0;
+  /*to made header background up to navbar and that work with clearfix only not with overflow: hidden*/
+  color: #919aa4;
+  position: relative;
+  z-index: 2;
+}
+
+.navbar .brand {
+  /* text-align: center; */
+  float: left;
+  width: 40%;
+}
+
+.navbar .brand img {
+  margin-top: 20px;
+}
+
+.navbar span {
+  color: #f7600f;
+}
+
+.navbar .links {
+  float: left;
+  width: 60%;
+  text-align: right;
+}
+
+.navbar .links li {
+  display: inline-block;
+  padding: 15px 0 0 0;
+  /*Top , Right , Bottom , Left*/
+  margin: 0 10px;
+  text-transform: capitalize;
+  border-Top: 2px solid transparent;
+  /* transparent: hidden the border*/
+  font-weight: bold;
+}
+
+.navbar .links li a {
+  text-decoration: none;
+  color: #FFF;
+  margin-top: 60px;
+}
+
+.navbar .links li:active a {
+  color: #f7600f;
+  border-top: 2px solid #f7600f;
+  cursor: pointer;
+}
+
+.navbar .links li:active a:hover {
+  color: #f7600f;
+}
+
+.navbar .links li:hover {
+  border-top: 2px solid #f7600f;
+  cursor: pointer;
+}
+
+/* End navbar */
+/*Start media*/
+/*End media*/
+/* Start header*/
+.header {
+  background-image: url("../imgs/azharul-islam-9LMGWHqUwnc-unsplash.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.header .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  z-index: 1;
+}
+
+.header .bx-wrapper {
+  height: 100%;
+  /* background-color: none !important; */
+}
+
+.header .bx-wrapper .bx-viewport {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0;
+  height: 100% !important;
+  background-color: none;
+  text-align: center;
+}
+
+.header .bxslider li {
+  background-color: none;
+  display: block;
+  height: 150px;
+  margin-top: 200px;
+}
+
+.header .bxslider li h2 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.header .bxslider li span {
+  color: #f7600f;
+}
+
+.header .bxslider li p {
+  color: #c3c2c2;
+}
+
+.header .bxslider li button {
+  width: 130px;
+  height: 45px;
+  background: none;
+  color: #f7600f;
+  font-weight: bold;
+  margin-top: 10px;
+  border: 1px solid #f7600f;
+  border-radius: 5px;
+}
+
+/* End header*/
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+@media (max-width: 767px) {
+  /*Mobile and Tablet screen rules*/
+  .container {
+    width: 540px;
+  }
+  .visible_xs {
+    display: block !important;
+  }
+  .hidden_xs {
+    display: none !important;
+  }
+  .sp {
+    font-size: 16px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /*Small screen Rules*/
+  .container {
+    width: 750px;
+  }
+  .visible_sm {
+    display: block !important;
+  }
+  .hidden_sm {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /*Medium screen Rules*/
+  .container {
+    width: 970px;
+  }
+  .visible_md {
+    display: block !important;
+  }
+  .hidden_md {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  /*Small screen Rules*/
+  .container {
+    width: 1170px;
+  }
+  .visible_lg {
+    display: block !important;
+  }
+  .hidden_lg {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=main.css.map */

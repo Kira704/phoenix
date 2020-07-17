@@ -1,0 +1,65 @@
+@import '_container';
+@import '_framework';
+@import '_navbar-icon';
+@import '_icons';
+@import '_navbar';
+@import '_header';
+@import '_body';
+
+@media(max-width:767px) {  /*Mobile and Tablet screen rules*/
+    .container{
+        width: 540px;
+    }
+    .visible_xs{
+        display: block !important;
+
+    }
+    .hidden_xs{
+        display: none !important;
+    }
+    .sp{
+        font-size: 16px !important;
+    }
+}
+
+
+@media(min-width:768px) and (max-width: 991px){/*Small screen Rules*/
+    .container{
+        width: 750px;
+    }
+    .visible_sm{
+        display: block !important;
+        
+    }
+    .hidden_sm{
+        display: none !important;
+    }
+  
+ }
+
+
+ @media(min-width:992px) and (max-width: 1199px){/*Medium screen Rules*/
+    .container{
+        width: 970px;
+    }
+    .visible_md{
+        display: block !important;
+        
+    }
+    .hidden_md{
+        display: none !important;
+    }
+}
+
+@media(min-width:1200px){/*Small screen Rules*/
+     .container{
+         width: 1170px;
+     }
+     .visible_lg{
+        display: block !important;
+        
+    }
+    .hidden_lg{
+        display: none !important;
+    }
+}

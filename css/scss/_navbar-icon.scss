@@ -1,0 +1,40 @@
+.navbar-icon{
+    height: 50px;
+    background-color: #2b3034;
+    .navbar-left{
+        width: 50%;
+        span{
+            color: #919aa4;
+            cursor: pointer;
+        }
+        i{
+            color: #bcbcbc;
+            line-height: 50px;
+            cursor: pointer;
+         &:hover{
+                color: #f7600f;
+                
+            }
+
+        }
+    }
+    .navbar-right{
+        width: 50%;
+        i{
+            color: #bcbcbc;
+            line-height: 50px;
+            float: right;
+            cursor: pointer;
+            margin-left: 5px;
+        &:hover{
+            color: #f7600f;
+            
+        }
+        }
+    }
+}
+
+
+@media(max-width: 767px){
+    
+}
