@@ -15,10 +15,11 @@
         width: 40%;
         img{
             margin-top: 20px;
+            max-width: 223px;
         }
     }
     span{
-        color: #f7600f;
+        color: $main-color;
     }
     .links{
 
@@ -31,24 +32,24 @@
             margin: 0 10px;
             text-transform: capitalize;
             border-Top: 2px solid transparent; /* transparent: hidden the border*/
-            font-weight: bold;
+            font-weight: normal;
             a{
                 text-decoration: none;
-                color: #FFF;
+                color: $text-color;
                  margin-top: 60px;
             }
         &:active{
             a{
-                color: #f7600f;
-                border-top: 2px solid #f7600f;
+                color: $main-color;
+                border-top: 2px solid $main-color;
                 cursor: pointer;
                 &:hover{
-                    color: #f7600f;
+                    color: $main-color;
                 }
             }
         }
         &:hover{
-            border-top: 2px solid #f7600f;
+            border-top: 2px solid $main-color;
             cursor: pointer;
         }
         }
@@ -63,9 +64,24 @@
     .navbar{
         .brand{
             .links{
-                li{
-                    
-                }
+                // color: #f7600f !important;
+            }
+        }
+    }
+}
+
+@media(min-width:992px) and (max-width: 1199px){
+    .navbar{
+        .brand{
+            .links{
+                
+                margin:20px 0 !important;
+                padding: 0 !important;
+
+               li{
+                //    color: #f7600f;
+               } 
+                
             }
         }
     }

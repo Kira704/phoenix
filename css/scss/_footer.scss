@@ -1,0 +1,155 @@
+/*Start contact*/
+
+.contact{
+     
+    margin-top: 20px;
+   background-image: url('../images/art01.jpg');
+   height: 600px;
+   color: #FFF;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   position: relative;
+   text-align: center;
+   .con_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.8);
+    p{
+        /* width: 60%; */
+        font-size: 18px;
+        line-height: 1.8;
+       
+     }
+     form{
+        text-align: center;
+        input{
+            font-size: 12px;
+            height: 30px;
+            width: 300px;
+            border-radius: 10px;
+            border: 1px solid #f70ea9;
+            background-color: #EEE;
+            padding-left: 10px;
+            padding-top: 6px;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+            color: #f70ea9;
+
+            &:hover{
+                border: none;
+             }
+         }
+         
+     
+     }
+     .subject{
+        margin-top: 50px;
+     }
+     .message{
+        margin-top: 20px;
+        input{
+            width: 630px;
+            height: 150px;
+         
+         
+         }
+     
+     }
+     .media{
+        overflow: hidden;
+  }
+  .btn{
+    float: left;
+    width: 49%;
+    text-align: center;
+    margin-left: 1%;
+    /* margin-left: 180px; */
+ }
+ .contact_media{
+    float: left;
+    width: 50%;
+    text-align: center;
+    margin-top: 30px;
+
+    i{
+
+        width: 40px;
+         height: 40px;
+         border-radius: 50%;
+         line-height: 40px;
+     }
+     .fa-facebook{
+        background-color: #0078d7;
+        color:#FFF;
+     }
+     .fa-twitter{
+        color: #FFF;
+        background-color: #1da1f2;
+     }
+     .fa-google-plus{
+        color: #FFF;
+        background-color: #dd4b39;
+     }
+ }
+ button{
+    margin-top: 30px;   
+    width: 150px;
+    height: 40px;
+    border: 1px solid #f70ea9;
+    background-color: transparent;
+    color: #f70ea9;
+    border-radius: 10px;
+    padding: 5px 0;
+    font-weight: normal;
+    font-size: 16px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    text-transform: uppercase;
+    &:hover{
+        border: none;
+        background-color: #f70ea9;
+        color: #FFF;
+     
+     }
+ }
+    }
+
+}
+
+ 
+/*End contact*/
+
+
+/*Start footer*/
+.footer{
+   background-color: #f70ea9;
+   height: 60px;
+   color: #FFF;
+   overflow: hidden;
+   text-align: center;
+   line-height: 60px;
+   font-size: 16px;
+   .copyright{
+    float: left;
+    width: 50%;
+ }
+ .copyleft{
+    float: left;
+    width: 50%;
+ }
+}
+
+  
+ 
+/*End footer*/

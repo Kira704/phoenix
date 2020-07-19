@@ -12,7 +12,7 @@
             line-height: 50px;
             cursor: pointer;
          &:hover{
-                color: #f7600f;
+                color: $main-color;
                 
             }
 
@@ -27,7 +27,7 @@
             cursor: pointer;
             margin-left: 5px;
         &:hover{
-            color: #f7600f;
+            color: $main-color;
             
         }
         }
