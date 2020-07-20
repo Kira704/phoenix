@@ -6,7 +6,7 @@
     overflow: hidden;
     .col{
         float: left;
-        width: 25%;
+       
         h2{
             color: #FFF;
         }
@@ -19,9 +19,10 @@
             color: #777;
             border: 1px solid #777;
             border-radius: 3px;
-            padding:10px;
+            padding:10px 5px;
             font-size: 12px;
             margin: 10px 5px 0 0;
+            cursor: pointer;
         }
         .tags{
             list-style: none;
@@ -73,6 +74,7 @@
         margin: 40px 0;
         color: #777;
         font-size: 12px;
+       
     }
 }
  
@@ -82,3 +84,35 @@
 
  
   /*End footer*/
+
+
+    /*start media*/
+@media(max-width:767px) {  /*Mobile and Tablet screen rules*/
+    .footer{
+        .col{
+          width: 100%;
+        }
+    .copyright{
+        text-align: center;
+    }
+    }
+}
+
+
+@media(min-width:768px) and (max-width: 991px){/*Small screen Rules*/
+    .footer{
+        .col{
+          width: 30%;
+        }
+    }
+ }
+ @media(min-width:992px){
+  .footer{
+      .col{
+        width: 25%;
+      }
+  }
+ }
+
+ 
+/*end media*/
